@@ -2,6 +2,13 @@ $desktop_size = 1024px
 $tablet_size = 768px
 $phone_size = 320px
 
+//Colors
+$black = #000
+$white = #fff
+$red = #ed2123
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap')
+@import "b4.styl"
 @import "Header/style.styl"
 @import "Content/style.styl"
 @import "Footer/style.styl"
@@ -9,8 +16,38 @@ $phone_size = 320px
 body
 	background white
 	font-size 16px
-	font-family 'Open Sans', sans-serif
-		
+	font-family 'Montserrat', sans-serif
+
+h1
+	font-size 1.5em
+h2
+	font-size 1.4em
+h3
+	font-size 1.3em
+h4
+	font-size 1.2em
+h5
+	font-size 1.1em
+p
+	font-size 1em
+
+.owl-nav
+	position absolute
+	top 50%
+	width 100%
+	i
+		font-size 1em
+		color $black
+	.owl-prev, .owl-next
+		position absolute
+		&:hover
+			background-color transparent !important
+			color $black
+	.owl-prev
+		right 100%
+	.owl-next
+		left 100%
+
 .notify
 	padding 0.8em
 	margin-bottom 1em
@@ -30,7 +67,7 @@ body
 		background #fff6bf
 		color #514721
 		border-color #ffd324
-	
+
 	&.info
 		background #d5edf8
 		color #205791

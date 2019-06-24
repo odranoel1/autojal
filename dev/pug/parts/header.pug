@@ -1,46 +1,26 @@
 header.Header
-	.sidebars
-		.sidebar.left 
-			.container-fluid
-				.row
-					.sidebar-header.col-xs-12
-						a.logo(href="#")
-							img(src="assets/img/logo.jpg", alt="")
-						a.sidebar-btn.pull-right(href='#', data-action='toggle', data-side='left')
-							i.fa.fa-time
-							| Cerrar
-				.row
-					.sidebar-content.col-xs-12
-						nav
-							ul
-								li(class=section == 'index' ? 'active' : '')
-									a(href="#") Home
-								li.nav-item
-									a.nav-link(href="#") Nosotros
-								li.nav-item
-									a.nav-link(href="#") Contacto
-				
-		//- .sidebar.right I am on right!
-		//- .sidebar.top I am on top!
-		//- .sidebar.bottom I am on bottom!
-	.container-fluid
+	.container
 		.row
-			.col-md-8.col-md-offset-2.hidden-xs.hidden-sm
-				.row
-					.col-md-2
-						a.d-block(href="")
-							img.img-fluid(src="assets/img/logo.jpg", alt="")
-					.col-md-10
-						nav.navbar
-							ul.nav.navbar-nav
-								li
-									a(href="#", class=section == 'index' ? 'active' : '') Home
-								li
-									a(href="#") Nosotros
-								li
-									a(href="#") Contacto
-								
-			.col-xs-12.visible-xs.visible-sm
-				a(href="#", data-action="toggle", data-side="left").sidebar-btn.pull-right
-					i.fa.fa-bars
-					| Menu
+			.col-sm-12.text-center
+				ul.list-inline
+					li
+						a.d-block(href="/")
+							img.img-fluid(src="assets/img/autojal-logo.png", alt="Autojal")
+					li
+						a(href="about.html", class=section == 'index' ? 'active' : '') NOSOTROS
+					li
+						a(href="product.html") AUTOS NUEVOS
+					li
+						a(href="#") AUTO SEMINUEVOS
+					li
+						a(href="#") AUTO DEMO
+					li
+						a(href="blog.html") NOTICIAS
+					li
+						a(href="contact.html") CONTACTO
+					li
+						a(href="#")
+							i.fas.fa-search
+					li
+						a(href="#")
+							img(src="assets/img/autojal-llave-icono.png", alt="Autojal")

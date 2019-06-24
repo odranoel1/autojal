@@ -1,0 +1,68 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Request-product
+			.container
+				.row
+					.col-sm-12
+						h2 Solicitar unidad
+				.rol
+					.col-sm-12
+						form(action="")
+							label No. Usuario de Ejecutivo
+							input(type="text")
+							label Nombre
+							input(type="text")
+							label Nombre
+							input(type="text")
+							label Folio de autorización de crédito
+							input(type="text")
+							label Mail
+							input(type="text")
+							label Correo electrónico
+							input(type="text")
+							label Teléfono fijo
+							input(type="text")
+							label Teléfono
+							input(type="text")
+							label Celular
+							input(type="text")
+							label Comentarios
+							textarea(name="", cols="30", rows="10")
+							h3 AGENCIAS
+							.radio
+								label(for="")
+									input(type="radio" name="optradio" checked)
+									| AGENCIAS DE LA MARCA EN MI ZONA
+							.radio
+								label(for="")
+									input(type="radio" name="optradio" checked)
+									| SELECCIÓN POR AGENCIA
+							.radio
+								label(for="")
+									input(type="radio" name="optradio" checked)
+									| SELECCIÓN POR ZONA
+							input(type="submit" value="ENVIAR")
+		include parts/footer.pug

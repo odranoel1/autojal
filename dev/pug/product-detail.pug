@@ -1,0 +1,134 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Product
+			.container-fluid
+				.row
+					.col-sm-12
+						form(action="")
+							label MARCA
+							select(name="")
+								option(value="") 1
+								option(value="") 2
+							label MODELO
+							select(name="")
+								option(value="") 1
+								option(value="") 2
+							label VERSIÓN
+							select(name="")
+								option(value="") 1
+								option(value="") 2
+							label AÑO
+							select(name="")
+								option(value="") 1
+								option(value="") 2
+			.container
+				.row
+					.col-sm-12
+						span MARCA / JEEP
+				.row
+					.col-sm-12
+						h2 Grand Cherokee trailhawk
+						h3 Jeep
+				.row
+					.col-sm-6
+						img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+					.col-sm-6
+						h3 Descripción
+						p
+							| Mientras que su homólogo de la década de los ochenta y noventa era una robusta SUV,
+							| se presenta mucho más exclusiva y sofisticada, muy a tono con los tiempos que transcurren.
+							| La Cherokee recurre a un propulsor de seis cilindros de 3.2 litros que se acopla a una
+							| caja automática de nueve velocidades, para hacerle frente a modelos de la talla de
+							| Ford Edge, Hyundai Santa Fe y Nissan Murano. 
+						form(action="")
+							label AÑO
+							select(name="")
+								option(value="") 1
+								option(value="") 2
+							label Seleccionar versión
+							a(href="#") Jeep Grand Cherokee Ladero 4x4 - 3.2L 271 hp v6
+							a(href="#") Jeep Grand Cherokee Ladero 4x4 - 3.2L 271 hp v6
+							a(href="#") Jeep Grand Cherokee Ladero 4x4 - 3.2L 271 hp v6
+							label Color
+							.radio
+								label
+									input(type="radio" name="optradio" checked)
+									| Color
+							p $824,900.00
+							input(type="submit" value="APARTAR")
+							p
+								| -Tu apartado será de $2,000.00 MNX
+								| (Esta cantidad se descuenta del valor de tu auto)
+								| -La plataforma Autojal se encarga de ubicar tu auto nuevo en la zona metropolitana.
+								| -Despues de ubicar tu unidad, podrás imprimir la logística para la facturación y entrega de tu unidad.
+								| -Devolución sin costo del apartado. En caso de no haber existencia de tu unidad, te daremos alternativas. Si no te interesa ninguna, te podemos hacer la devolución de tu apartado al 100%. 
+							i.fas.fa-times
+							a(href="") SOLCITAR INFORMACIÓN
+				.row
+					.col-sm-12
+						h2 Especificaciones
+						ul
+							li
+								p Vehículo
+							li
+								p Precio
+							li
+								p Kilometraje
+							li
+								p Transmisión
+							li
+								p Puertas
+							li
+								p Pasajeros
+							li
+								p Litros (motor)
+							li
+								p Cilindros
+							li
+								p Combustible
+							li
+								p Consumo de combustible
+							li
+								p 2019 Dodge Charger SRT SC
+							li
+								p $1,314,900 MXP
+							li
+								p N/D
+							li
+								p Automático
+							li
+								p 4
+							li
+								p 5
+							li
+								p 6.2
+							li
+								p 8
+							li
+								p Gasolina premium
+							li
+								p 8.3 km/l
+		include parts/footer.pug

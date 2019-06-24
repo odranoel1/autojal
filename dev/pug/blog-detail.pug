@@ -1,0 +1,46 @@
+doctype html
+html(lang="es")
+	head
+		meta(name="charset", charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width')
+		meta(name="title", content="")
+		meta(name="description", content="")
+		meta(name="keywords", content="")
+		meta(name="robots", content="index, follow")
+		meta(name="author", content="http://www.lava.mx")
+		meta(name="distribution", content="global")
+		meta(name="rating" content="general")
+		meta(name="revisit-after" content="14 Days")
+		title
+		link(rel="stylesheet", href="//use.fontawesome.com/releases/v5.0.13/css/all.css", integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", crossorigin="anonymous")
+		link(rel="stylesheet", href="assets/vendor.css")
+		link(rel="stylesheet", href="assets/main.css")
+		link(rel="icon", type="image/png", href="favicon.png")
+
+		script(src="assets/vendor.js")
+		script(src="assets/main.js")
+	body
+		include parts/header.pug
+		
+		.Blog-detail
+			.container
+				.row
+					.col-sm-12
+						a(href="blog.html")
+							i.fas.fa-chevron-left
+						h2 En 2024, 57% de los autos será eléctrico
+				.row
+					.col-sm-12
+						img(src="assets/img/autojal-blog-detail.png", alt="Autojal")
+						p
+							| Los automóviles eléctricos representan solo una pequeña fracción de los automóviles vendidos en todo el mundo, pero eso cambiará rápidamente, según un análisis de Bloomberg New Energy Finance (BNEF).
+							| Para 2040, los autos eléctricos podrían representar el 57% de todas las ventas de autos de pasajeros en todo el mundo, según el informe. Eso es un aumento de dos puntos porcentuales con respecto a la proyección 2040 de BNEF el año pasado. Los vehículos eléctricos representarán un porcentaje similar de las ventas de vehículos comerciales ligeros en Estados Unidos, Europa y China dentro de ese tiempo, predice BNEF.
+							| “Vemos una posibilidad real de que las ventas globales de automóviles de pasajeros convencionales ya hayan superado su pico”, dijo Colin McKerracher, jefe de transporte avanzado de BNEF.
+							| Los autos eléctricos se aproximan a los autos de gasolina y diesel en el precio de compra y ya cuestan menos para operar. Eso significa que los autos eléctricos pronto superarán a los autos de combustión interna como la opción más económica para los consumidores, según el nuevo informe.
+							| Durante las próximas dos décadas, las ventas mundiales de vehículos eléctricos aumentarán de 2 millones el año pasado a 56 millones para 2040, predice BNEF. Al mismo tiempo, las ventas de vehículos “convencionales” se reducirán de los 85 millones del año pasado a sólo 42 millones en todo el mundo.
+				.row
+					.col-sm-12
+						b COMPARTIR
+						i.fab.fa-facebook-square
+		include parts/footer.pug

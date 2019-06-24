@@ -25,25 +25,147 @@ html(lang="es")
 		
 		#home-sidebar.slider-pro
 			.sp-slides
-				// Slide 1
 				.sp-slide
 					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
+					.sp-layer
+						h2 AUTOS NUEVOS Y SEMINUEVOS MULTIMARCA
+						a(href="#").btn VER NUEVOS MODELOS
 				.sp-slide
 					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
 				.sp-slide
 					img.sp-image(data-default='http://bqworks.com/slider-pro/images/image1_medium.jpg', data-retina='http://bqworks.com/slider-pro/images/image1_large.jpg', src='http://bqworks.com/slider-pro/images/image1_medium.jpg', style='width: 100%; height: auto; margin-left: 0px; margin-top: -70px;')
 
-				// // Slide 2
-				// .sp-slide
-				// 	p Lorem ipsum dolor sit amet
-				// // Slide 3
-				// .sp-slide
-				// 	h3.sp-layer Lorem ipsum dolor sit amet
-				// 	p.sp-layer consectetur adipisicing elit
-
-		.Content
-			.container
+		.Home
+			.container-fluid
+				.row.car-segment
+					.col-sm-12
+						h2 AUTOS POR SEGMENTO
+						ul
+							li
+								a(href="#").img-responsive
+									img(src="assets/img/autojal-deportivo.png", alt="Autojal").img-responsive
+									| DEPORTIVO
+							li
+								a(href="#")
+									img(src="assets/img/autojal-coupe.png", alt="Autojal").img-responsive
+									| COUPÉ
+							li
+								a(href="#")
+									img(src="assets/img/autojal-pickup.png", alt="Autojal").img-responsive
+									| PICKUP
+							li
+								a(href="#")
+									img(src="assets/img/autojal-coupe.png", alt="Autojal").img-responsive
+									| HÍBRIDOS
+							li
+								a(href="#")
+									img(src="assets/img/autojal-electricos.png", alt="Autojal").img-responsive
+									| ELÉCTRICOS
+							li
+								a(href="#")
+									img(src="assets/img/autojal-electricos.png", alt="Autojal").img-responsive
+									| SEDÁN
+							li
+								a(href="#")
+									img(src="assets/img/autojal-minivan.png", alt="Autojal").img-responsive
+									| MINIVAN
+							li
+								a(href="#")
+									img(src="assets/img/autojal-suv.png", alt="Autojal").img-responsive
+									| SUV
+							li
+								a(href="#")
+									img(src="assets/img/autojal-hatchback.png", alt="Autojal").img-responsive
+									| HATCHBACK
+				.row
+					.col-sm-8.col-sm-offset-2.featured
+						h2 SEMINUEVOS DESTACADOS
+						#cars-featured.owl-carousel.owl-theme
+							.item
+								img(src="assets/img/autojal-carro-demo.jpg", alt="Autojal").img-responsive
+								.content
+									p Volkswagen
+									span Gol Sedan 2018
+									b $218,480 MXP
+									a(href="#").btn.btn-block VER DETALLE
+							.item
+								img(src="assets/img/autojal-carro-demo.jpg", alt="Autojal").img-responsive
+								.content
+									p Volkswagen
+									span Gol Sedan 2018
+									b $218,480 MXP
+									a(href="#").btn.btn-block VER DETALLE
+							.item
+								img(src="assets/img/autojal-carro-demo.jpg", alt="Autojal").img-responsive
+								.content
+									p Volkswagen
+									span Gol Sedan 2018
+									b $218,480 MXP
+									a(href="#").btn.btn-block VER DETALLE
+							.item
+								img(src="assets/img/autojal-carro-demo.jpg", alt="Autojal").img-responsive
+								.content
+									p Volkswagen
+									span Gol Sedan 2018
+									b $218,480 MXP
+									a(href="#").btn.btn-block VER DETALLE
 				.row
 					.col-sm-12
-						p hola
+						h2 TU COMUNIDAD AUTOMOTRIZ ONLINE
+				.row
+					.col-sm-8.col-sm-offset-2.featured
+						h2 OPORTUNIDAD DE AUTOS DEMO
+						#cars-demo.owl-carousel.owl-theme
+							.item
+								img(src="assets/img/autojal-carro-demo.jpg", alt="Autojal").img-responsive
+								.content
+									p Volkswagen
+									span Gol Sedan 2018
+									b $218,480 MXP
+									a(href="#").btn.btn-block VER DETALLE
+							.item
+								img(src="assets/img/autojal-carro-demo.jpg", alt="Autojal").img-responsive
+								.content
+									p Volkswagen
+									span Gol Sedan 2018
+									b $218,480 MXP
+									a(href="#").btn.btn-block VER DETALLE
+							.item
+								img(src="assets/img/autojal-carro-demo.jpg", alt="Autojal").img-responsive
+								.content
+									p Volkswagen
+									span Gol Sedan 2018
+									b $218,480 MXP
+									a(href="#").btn.btn-block VER DETALLE
+							.item
+								img(src="assets/img/autojal-carro-demo.jpg", alt="Autojal").img-responsive
+								.content
+									p Volkswagen
+									span Gol Sedan 2018
+									b $218,480 MXP
+									a(href="#").btn.btn-block VER DETALLE
+				.row.services
+					.col-sm-4.col-sm-offset-2
+						h2 SERVICIOS
+						ul
+							li
+								img(src="assets/img/autojal-creditcard-icono.png", alt="Autojal").img-responsive
+								.content
+									b Tramita tu crédito
+									p Dinos tus necesidades y tenemos el plan a tu medida.
+									a(href="#").btn SOLICITA TU CRÉDITO
+							li
+								img(src="assets/img/autojal-arrendamiento-icono.png", alt="Autojal").img-responsive
+								.content
+									b Tramita tu arrendamiento
+									p Aprovecha un arrendamiento para deducir tu unidad, planes a tu medida.
+									a(href="#").btn SOLICITA UN ARRENDAMIENTO
+							li
+								img(src="assets/img/autojal-seguros-icono.png", alt="Autojal").img-responsive
+								.content
+									b Seguros y Flotilla
+									p Contamos con precios especiales para flotillas. Pregunta por marcas participantes.
+									a(href="#").btn SOLICITAR FLOTILLA
+					.col-sm-6
+						img(src="assets/img/servicios.png", alt="Autojal").img-responsive
 		include parts/footer.pug

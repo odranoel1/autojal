@@ -19,21 +19,53 @@ $( document ).ready(function() {
         }
     });
 
-    if($(".sidebars").length != 0)
-    {
-        var sides = ["left", "top", "right", "bottom"];
-      
-        for (var i = 0; i < sides.length; ++i) {
-            var cSide = sides[i];
-            $(".sidebar." + cSide).sidebar({side: cSide});
+    $('#cars-featured').owlCarousel({
+      nav: true,
+      dots: false,
+      loop: true,
+      responsive: {
+        0: {
+          nav: false,
+          dots: true,
+          items: 1
+        },
+        480: {
+          nav: false,
+          dots: true,
+          items: 2
+        },
+        992: {
+          nav: true,
+          dots: false,
+          items: 3
         }
+      }
+    });
+    $( ".owl-prev").html('<i class="fas fa-chevron-left"></i>');
+    $( ".owl-next").html('<i class="fas fa-chevron-right"></i>');
 
-        $(".sidebar-btn[data-action]").on("click", function () {
-            var $this = $(this);
-            var action = $this.attr("data-action");
-            var side = $this.attr("data-side");
-            $(".sidebar." + side).trigger("sidebar:" + action);
-            return false;
-        });
-    }
+    $('#cars-demo').owlCarousel({
+      nav: true,
+      dots: false,
+      loop: true,
+      responsive: {
+        0: {
+          nav: false,
+          dots: true,
+          items: 1
+        },
+        480: {
+          nav: false,
+          dots: true,
+          items: 2
+        },
+        992: {
+          nav: true,
+          dots: false,
+          items: 3
+        }
+      }
+    });
+    $( ".owl-prev").html('<i class="fas fa-chevron-left"></i>');
+    $( ".owl-next").html('<i class="fas fa-chevron-right"></i>');
 });
