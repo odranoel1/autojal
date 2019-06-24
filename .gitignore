@@ -5,4 +5,5 @@ dev/css/style.css
 public/assets/*
 public/assets/*
 public/*.html
+package-lock.json
 .DS_Store
