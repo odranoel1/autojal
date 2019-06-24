@@ -36,3 +36,245 @@
         gap 1.5rem
         b
           color $red
+
+.About
+  .info
+    display flex
+    align-items center
+    background-color #ebebeb
+    @media only screen and (max-width 700px)
+      flex-direction column
+    p
+      text-align justify
+    & > div:first-child
+      @media only screen and (max-width 768px)
+        padding 15px
+    img
+      @media only screen and (max-width 700px)
+        width 100%
+  .directory
+    margin-bottom 60px
+    & > div:first-child
+      display grid
+      grid-template-columns auto auto
+      grid-template-rows auto auto auto
+      @media only screen and (max-width 480px)
+        grid-template-columns auto
+    .item
+      margin-bottom 40px
+    p
+      margin-right 10px
+    b
+      color $red
+    a
+      color $black
+      display block
+
+.Contact
+  margin-top 70px
+  margin-bottom 70px
+  a
+    display block
+    color $black
+
+.Blog
+  .back
+    color $black
+
+.Blog-detail
+  .info, a
+    color $black
+  .info p
+    text-align justify
+    margin 30px 0
+
+.Product-brands
+  .content
+    margin 60px 0
+    display grid
+    grid-template-columns auto auto auto auto
+    justify-items center
+    align-items center
+    gap 8rem
+    @media only screen and (max-width 1024px)
+      gap 5rem
+    @media only screen and (max-width 768px)
+      grid-template-columns auto auto
+    @media only screen and (max-width 480px)
+        grid-template-columns auto
+    img
+      padding 10px
+      transition 0.5s
+      &:hover
+        background-color #c9c9c9
+        border-radius 10px
+        padding 10px
+
+.Product
+  .title-default
+    span
+      float right
+      font-size 3rem
+  .grid
+    b
+      margin-top 0 !important
+      margin-bottom 15px !important
+    .content
+      padding 10px !important
+  .btn-link
+    color #b3b3b3
+
+.Product-payment
+  .item
+    display grid
+    grid-template-columns 20% 50% 20%
+    gap 5%
+    margin-top 20px
+    margin-bottom 20px
+    @media only screen and (max-width 992px)
+      grid-template-columns auto
+      gap 0
+    .description
+      h3
+        margin-top 0
+      b
+        display block
+      p
+        white-space pre-line
+      @media only screen and (max-width 992px)
+        margin-top 20px
+    .price
+      justify-self end
+      @media only screen and (max-width 992px)
+        justify-self start
+  form
+    & > div:nth-child(2)
+      border-bottom 1px solid #cbcbcb
+      padding-bottom 30px
+    .pay
+      display grid
+      grid-template-columns repeat(2,auto)
+      border-top 1px solid #cbcbcb
+      padding 20px 0
+      label
+        color $black
+        margin-right 10px
+      img
+        justify-self end
+
+.Request-product
+  .form-request-prod
+    label
+      margin 10px 0
+      font-weight initial
+    .radio label
+      color #c1bfc0
+    .select
+      display grid
+      align-items center
+      gap 2rem
+      .checkbox
+        border 1px solid $black
+        border-radius 10px
+        padding 0 8px
+        margin 0 !important
+    .select-agency
+      grid-template-columns repeat(3, 190px)
+      grid-template-rows auto auto
+    .select-zone
+      grid-template-columns repeat(4, 190px)
+      @media only screen and (max-width 992px)
+        grid-template-columns repeat(3, 190px)
+    .select-agency, .select-zone
+      @media only screen and (max-width 768px)
+        grid-template-columns repeat(2, 150px)
+      @media only screen and (max-width 400px)
+        grid-template-columns 100%
+
+.Account
+  .title hr
+    width 58%
+  .profile
+    @media only screen and (max-width 768px)
+      display initial
+  form
+    input
+      margin-top 10px
+  .oportunities
+    display grid
+    grid-template-columns 48% 48%
+    gap 4%
+    @media only screen and (max-width 480px)
+      grid-template-columns 100%
+      gap 0
+    .item
+      border 1px solid $black
+      border-radius 10px
+      box-shadow 10px 10px 6px -8px rgba(0,0,0,0.75)
+      display grid
+      grid-template-columns auto auto
+      margin-bottom 35px
+      @media only screen and (max-width 1024px)
+        grid-template-columns auto
+      img
+        border-top-left-radius 10px
+        border-bottom-left-radius 10px
+        height 100%
+        @media only screen and (max-width 1024px)
+          border-top-right-radius 10px
+          border-bottom-left-radius 0
+      .content
+        padding 10px 20px
+
+.Thanks
+  height 80vh
+  display flex
+  justify-content center
+  flex-direction column
+  h2
+    font-size 3em
+    @media only screen and (max-width 768px)
+      font-size 2em
+  h3
+    font-size 2em
+    @media only screen and (max-width 768px)
+      font-size 1em
+
+.breadcrumbs
+  color $black
+  b
+    color $red
+
+.title
+  color $black
+  display flex
+  align-items end
+  hr
+    border 1px solid black
+    width 100%
+    margin-bottom 13px
+    margin-left 10px
+
+.grid
+  display grid
+  grid-template-columns 33% 33% 33%
+  @media only screen and (max-width 768px)
+    grid-template-columns 50% 50%
+  @media only screen and (max-width 480px)
+    grid-template-columns 100%
+  .item
+    border-radius 10px
+    margin 20px 10px
+    img
+      border-top-left-radius 10px
+      border-top-right-radius 10px
+      width 100%
+    .content
+      padding 20px
+      text-align left
+      background-color #ebebeb
+      border-bottom-left-radius 10px
+      border-bottom-right-radius 10px
+      b
+        display block
+        margin 20px 0

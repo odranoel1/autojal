@@ -23,49 +23,64 @@ html(lang="es")
 	body
 		include parts/header.pug
 		
-		.Product
+		.Product-payment
 			.container
 				.row
-					.col-sm-12
-						span AUTOS NUEVOS/ MARCA / JEEP / GRAND CHEROKEE / APARTAR
+					.col-sm-10.col-sm-offset-1.my-5
+						span.breadcrumbs
+							| AUTOS NUEVOS/ MARCA / JEEP / GRAND CHEROKEE / 
+							b APARTAR
 				.row
-					.col-sm-12
-						h2 Pago
+					.col-sm-10.col-sm-offset-1
+						h2.title-default Pago
 				.row
-					.col-sm-12
+					.col-sm-10.col-sm-offset-1.item
 						img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
-						h3 Jeep Cherokee Trailhawk
-						p
-							b Ladero 4x4 - 3.2L 271 hp v6
-							| Transmisión automática
-							| Cuatro puertas
-							| 8 cilindros
-							| Motor 6.2
-						p 2019
-						span COLOR
-						P $824,900
+						.description
+							h3 Jeep Cherokee Trailhawk
+							p
+								b Ladero 4x4 - 3.2L 271 hp v6
+								| Transmisión automática
+								| Cuatro puertas
+								| 8 cilindros
+								| Motor 6.2
+							.right
+								p 2019
+								span COLOR
+						.price
+							b $824,900
 				.row
-					.col-sm-12
+					.col-sm-10.col-sm-offset-1
 						form(action="")
-							label(for="").radio-inline
-								input(type="radio" name="optradio" checked)
-								| Pago con paypal
-							img(src="assets/img/autojal-logo-paypal.png" alt="Autojal").img-responsive
-							label(for="").radio-inline
-								input(type="radio" name="optradio")
-								| Pago con Oxxo pay
-							img(src="assets/img/autojal-logo-oxxopay.png" alt="Autojal").img-responsive
-							label(for="").radio-inline
-								input(type="radio" name="optradio")
-								| Pago con Tarjeta
-							img(src="assets/img/autojal-logo-visa.png" alt="Autojal").img-responsive
-							label(for="") Nombre del titular
-							input(type="text")
-							label(for="") Número de tarjeta
-							input(type="text")
-							label(for="") Código de seguridad
-							input(type="text")
-							label(for="") Fecha de vencimiento
-							input(type="text")
-							input(type="submit" value="FINALIZAR")
+							.row.form-group
+								.col-sm-12
+									.pay
+										label(for="").radio-inline
+											input(type="radio" name="optradio" checked)
+											| Pago con paypal
+										img(src="assets/img/autojal-logo-paypal.png" alt="Autojal").img-responsive
+									.pay
+										label(for="").radio-inline
+											input(type="radio" name="optradio")
+											| Pago con Oxxo pay
+										img(src="assets/img/autojal-logo-oxxopay.png" alt="Autojal").img-responsive
+									.pay
+										label(for="").radio-inline
+											input(type="radio" name="optradio")
+											| Pago con Tarjeta
+										img(src="assets/img/autojal-logo-visa.png" alt="Autojal").img-responsive
+							.row.form-group
+								.col-sm-6
+									label(for="") Nombre del titular
+									input(type="text").form-control
+								.col-sm-6
+									label(for="") Número de tarjeta
+									input(type="text").form-control
+								.col-sm-6
+									label(for="") Código de seguridad
+									input(type="text").form-control
+								.col-sm-6
+									label(for="") Fecha de vencimiento
+									input(type="text").form-control
+							input(type="submit" value="FINALIZAR").btn.btn-default.pull-right.mb-5
 		include parts/footer.pug

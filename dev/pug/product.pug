@@ -46,16 +46,54 @@ html(lang="es")
 								option(value="") 2
 			.container
 				.row
-					.col-sm-12
-						span AUTOS NUEVOS/ MARCA / JEEP
+					.col-sm-10.col-sm-offset-1.my-5
+						span.breadcrumbs
+							| AUTOS NUEVOS / MARCA / 
+							b JEEP
 				.row
-					.col-sm-12
-						h2 Modelos
-						h3 Jeep
+					.col-sm-10.col-sm-offset-1
+						h2.title-default
+							| Modelos
+							span Jeep
 				.row
-					.col-sm-12
-						img(src="assets/img/autojal-producto-general.png", alt="Autojal")
-						b
-							| Grand Cherokee
-						a(href="product-detail.html").btn VER DETALLE
+					.col-sm-10.col-sm-offset-1.grid
+						.item
+							img(src="assets/img/autojal-producto-general.png", alt="Autojal")
+							.content
+								b
+									| Grand Cherokee
+								a(href="product-detail.html").btn.btn-block.btn-default VER DETALLE
+						.item
+							img(src="assets/img/autojal-producto-general.png", alt="Autojal")
+							.content
+								b
+									| Grand Cherokee
+								a(href="product-detail.html").btn.btn-block.btn-default VER DETALLE
+						.item
+							img(src="assets/img/autojal-producto-general.png", alt="Autojal")
+							.content
+								b
+									| Grand Cherokee
+								a(href="product-detail.html").btn.btn-block.btn-default VER DETALLE
+						.item
+							img(src="assets/img/autojal-producto-general.png", alt="Autojal")
+							.content
+								b
+									| Grand Cherokee
+								a(href="product-detail.html").btn.btn-block.btn-default VER DETALLE
+						.item
+							img(src="assets/img/autojal-producto-general.png", alt="Autojal")
+							.content
+								b
+									| Grand Cherokee
+								a(href="product-detail.html").btn.btn-block.btn-default VER DETALLE
+						.item
+							img(src="assets/img/autojal-producto-general.png", alt="Autojal")
+							.content
+								b
+									| Grand Cherokee
+								a(href="product-detail.html").btn.btn-block.btn-default VER DETALLE
+				.row
+					.col-sm-10.col-sm-offset-1.text-center.my-5
+						a(href="#").btn.btn-link VER MÁS
 		include parts/footer.pug

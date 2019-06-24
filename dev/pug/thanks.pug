@@ -23,13 +23,12 @@ html(lang="es")
 	body
 		include parts/header.pug
 		
-		.Thanks
-			.container
-				.row
-					.col-sm-12
-						h2 ¡Gracias!
-						h3 Tu solicitud ha sido enviada
-						p
-							| Estamos localizando tu unidad, recibirás un correo con los datos de la unidad solicitada y podrás continuar con el proceso.
-						a(href="#").btn SEGUIR COMPRANDO
+		.Thanks.container
+			.row
+				.col-xs-10.col-xs-offset-1.text-center
+					h2.title-default ¡Gracias!
+					h3 Tu solicitud ha sido enviada
+					p.mb-5
+						| Estamos localizando tu unidad, recibirás un correo con los datos de la unidad solicitada y podrás continuar con el proceso.
+					a(href="product.html").btn.btn-default SEGUIR COMPRANDO
 		include parts/footer.pug

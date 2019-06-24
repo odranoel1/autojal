@@ -26,43 +26,119 @@ html(lang="es")
 		.Request-product
 			.container
 				.row
-					.col-sm-12
-						h2 Solicitar unidad
-				.rol
-					.col-sm-12
-						form(action="")
-							label No. Usuario de Ejecutivo
-							input(type="text")
-							label Nombre
-							input(type="text")
-							label Nombre
-							input(type="text")
-							label Folio de autorización de crédito
-							input(type="text")
-							label Mail
-							input(type="text")
-							label Correo electrónico
-							input(type="text")
-							label Teléfono fijo
-							input(type="text")
-							label Teléfono
-							input(type="text")
-							label Celular
-							input(type="text")
-							label Comentarios
-							textarea(name="", cols="30", rows="10")
-							h3 AGENCIAS
-							.radio
-								label(for="")
-									input(type="radio" name="optradio" checked)
-									| AGENCIAS DE LA MARCA EN MI ZONA
-							.radio
-								label(for="")
-									input(type="radio" name="optradio" checked)
-									| SELECCIÓN POR AGENCIA
-							.radio
-								label(for="")
-									input(type="radio" name="optradio" checked)
-									| SELECCIÓN POR ZONA
-							input(type="submit" value="ENVIAR")
+					.col-xs-10.col-xs-offset-1.mt-5
+						span.breadcrumbs
+							| AUTOS NUEVOS / MARCA / JEEP / GRAND CHEROKEE / 
+							b APARTAR
+				.row
+					.col-xs-10.col-xs-offset-1
+						h2.title-default Solicitar unidad
+				.row
+					.col-xs-10.col-xs-offset-1
+						form(action="").form-request-prod
+							.row
+								.col-sm-6.form-group.mb-5
+									.title
+										h3 EJECUTIVO
+										hr
+									label No. Usuario de Ejecutivo
+									input(type="text").form-control
+									label Nombre
+									input(type="text").form-control
+									label Mail
+									input(type="text").form-control
+									label Teléfono fijo
+									input(type="text").form-control
+									label Celular
+									input(type="text").form-control
+								.col-sm-6.form-group.mb-5
+									.title
+										h3 CLIENTE
+										hr
+									label Nombre
+									input(type="text").form-control
+									label Folio de autorización de crédito
+									input(type="text").form-control
+									label Correo electrónico
+									input(type="text").form-control
+									label Teléfono
+									input(type="text").form-control
+									label Comentarios
+									textarea(name="", cols="30", rows="1").form-control
+							.row
+								.col-sm-12
+									.title
+										h3 AGENCIAS
+										hr
+									.radio
+										label(for="")
+											input(type="radio" name="optradio" checked)
+											| AGENCIAS DE LA MARCA EN MI ZONA
+									.radio
+										label(for="")
+											input(type="radio" name="optradio")
+											| SELECCIÓN POR AGENCIA
+										.select.select-agency
+											.checkbox
+												label
+													input(type="checkbox")
+													| Honda Colomos
+											.checkbox
+												label
+													input(type="checkbox")
+													| Honda Magno
+											.checkbox
+												label
+													input(type="checkbox")
+													| Honda Excelencia
+											.checkbox
+												label
+													input(type="checkbox")
+													| Honda Glz Gallo
+											.checkbox
+												label
+													input(type="checkbox")
+													| Honda Acueducto
+											.checkbox
+												label
+													input(type="checkbox")
+													| Honda Vanguardia
+									.radio
+										label(for="")
+											input(type="radio" name="optradio")
+											| SELECCIÓN POR ZONA
+										.select.select-zone
+											.checkbox
+												label
+													input(type="checkbox")
+													| Jalisco
+											.checkbox
+												label
+													input(type="checkbox")
+													| Michoacán
+											.checkbox
+												label
+													input(type="checkbox")
+													| Nayarit
+											.checkbox
+												label
+													input(type="checkbox")
+													| Guanajuato
+											.checkbox
+												label
+													input(type="checkbox")
+													| Aguascalientes
+											.checkbox
+												label
+													input(type="checkbox")
+													| Colima
+											.checkbox
+												label
+													input(type="checkbox")
+													| Guanajuato
+											.checkbox
+												label
+													input(type="checkbox")
+													| Sinaloa
+									input(type="submit" value="ENVIAR").btn.btn-default.mb-5
 		include parts/footer.pug

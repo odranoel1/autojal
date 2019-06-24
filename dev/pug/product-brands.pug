@@ -23,7 +23,7 @@ html(lang="es")
 	body
 		include parts/header.pug
 		
-		.Product
+		.Product-brands
 			.container-fluid
 				.row
 					.col-sm-12
@@ -46,27 +46,45 @@ html(lang="es")
 								option(value="") 2
 			.container
 				.row
-					.col-sm-12
-						span AUTOS NUEVOS/ MARCA / JEEP
+					.col-sm-12.my-5
+						span.breadcrumbs
+							| AUTOS NUEVOS / MARCA / 
+							b JEEP
 				.row
 					.col-sm-12
-						h2 Marcas
+						h2.title-default Marcas
 				.row
-					.col-sm-12
-						img(src="assets/img/autojal-logo-audi.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-bmw.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-chevrolet.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-honda.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-ford.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-hyundai.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-jeep.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-kia.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-mazda.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-mitsubishi.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-nissan.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-renault.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-seat.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-suzuki.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-toyota.png", alt="Autojal").img-responsive
-						img(src="assets/img/autojal-logo-volkswagen.png", alt="Autojal").img-responsive
+					.col-sm-12.content
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-audi.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-bmw.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-chevrolet.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-honda.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-ford.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-hyundai.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-jeep.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-kia.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-mazda.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-mitsubishi.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-nissan.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-renault.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-seat.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-suzuki.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-toyota.png", alt="Autojal").img-responsive
+						a(href="product.html")
+							img(src="assets/img/autojal-logo-volkswagen.png", alt="Autojal").img-responsive
 		include parts/footer.pug
