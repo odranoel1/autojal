@@ -124,6 +124,40 @@
   .btn-link
     color #b3b3b3
 
+.Product-detail
+  .thumbnails
+    display grid
+    grid-template-columns repeat(4,auto)
+    gap 1rem
+    margin-top 20px
+    li
+      padding 0
+  .description
+    h3
+      color $red
+      font-weight bold
+    p
+      text-align justify
+    form.select-version
+      p
+        color $red
+      a
+        display block
+        color $black
+      .price
+        color $black
+  .specifications
+    h2
+      color $red
+    ul
+      display grid
+      grid-template-columns auto auto
+      padding-left 0
+      list-style none
+      li
+        border-bottom 1px solid $red
+        padding 10px 0
+
 .Product-payment
   .item
     display grid
@@ -278,3 +312,10 @@
       b
         display block
         margin 20px 0
+
+.filter-product
+  background-color $black
+  padding 20px 0
+  text-align center
+  label
+    color $white

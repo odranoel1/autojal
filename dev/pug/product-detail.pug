@@ -23,39 +23,58 @@ html(lang="es")
 	body
 		include parts/header.pug
 		
-		.Product
+		.Product-detail
 			.container-fluid
-				.row
+				.row.filter-product
 					.col-sm-12
-						form(action="")
-							label MARCA
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label MODELO
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label VERSIÓN
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label AÑO
-							select(name="")
-								option(value="") 1
-								option(value="") 2
+						form(action="").form-inline
+							.form-group
+								label MARCA
+								select(name="").form-control
+									option(value="") 2019
+									option(value="") 2018
+							.form-group
+								label MODELO
+								select(name="").form-control
+									option(value="") 2019
+									option(value="") 2018
+							.form-group
+								label VERSIÓN
+								select(name="").form-control
+									option(value="") 2019
+									option(value="") 2018
+							.form-group
+								label AÑO
+								select(name="").form-control
+									option(value="") 2019
+									option(value="") 2018
 			.container
 				.row
-					.col-sm-12
-						span MARCA / JEEP
+					.col-sm-10.col-sm-offset-1.my-5
+						span.breadcrumbs
+							| MARCA / 
+							b JEEP
 				.row
-					.col-sm-12
-						h2 Grand Cherokee trailhawk
+					.col-sm-10.col-sm-offset-1
+						h2.title-default Grand Cherokee trailhawk
 						h3 Jeep
 				.row
-					.col-sm-6
+					.col-sm-5.col-sm-offset-1
 						img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
-					.col-sm-6
+						ul.list-inline.thumbnails
+							li
+								a(href="#")
+									img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+							li
+								a(href="#")
+									img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+							li
+								a(href="#")
+									img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+							li
+								a(href="#")
+									img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+					.col-sm-5.description
 						h3 Descripción
 						p
 							| Mientras que su homólogo de la década de los ochenta y noventa era una robusta SUV,
@@ -63,12 +82,13 @@ html(lang="es")
 							| La Cherokee recurre a un propulsor de seis cilindros de 3.2 litros que se acopla a una
 							| caja automática de nueve velocidades, para hacerle frente a modelos de la talla de
 							| Ford Edge, Hyundai Santa Fe y Nissan Murano. 
-						form(action="")
+						form(action="").select-version
 							label AÑO
 							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label Seleccionar versión
+								option(value="") 2019
+								option(value="") 2018
+							p
+								b Seleccionar versión
 							a(href="#") Jeep Grand Cherokee Ladero 4x4 - 3.2L 271 hp v6
 							a(href="#") Jeep Grand Cherokee Ladero 4x4 - 3.2L 271 hp v6
 							a(href="#") Jeep Grand Cherokee Ladero 4x4 - 3.2L 271 hp v6
@@ -77,58 +97,62 @@ html(lang="es")
 								label
 									input(type="radio" name="optradio" checked)
 									| Color
-							p $824,900.00
-							input(type="submit" value="APARTAR")
-							p
+							p.price
+								b $824,900.00
+							.row.form-group
+								.col-sm-6
+									input(type="submit" value="APARTAR").btn.btn-default.btn-block
+									i.fas.fa-times
+								.col-sm-6
+									a(href="").btn.btn-default SOLICITAR INFORMACIÓN
+							p.d-none
 								| -Tu apartado será de $2,000.00 MNX
 								| (Esta cantidad se descuenta del valor de tu auto)
 								| -La plataforma Autojal se encarga de ubicar tu auto nuevo en la zona metropolitana.
 								| -Despues de ubicar tu unidad, podrás imprimir la logística para la facturación y entrega de tu unidad.
 								| -Devolución sin costo del apartado. En caso de no haber existencia de tu unidad, te daremos alternativas. Si no te interesa ninguna, te podemos hacer la devolución de tu apartado al 100%. 
-							i.fas.fa-times
-							a(href="") SOLCITAR INFORMACIÓN
 				.row
-					.col-sm-12
+					.col-sm-10.col-sm-offset-1.specifications.my-5
 						h2 Especificaciones
 						ul
 							li
-								p Vehículo
+								b Vehículo
 							li
-								p Precio
+								b Precio
 							li
-								p Kilometraje
+								b Kilometraje
 							li
-								p Transmisión
+								b Transmisión
 							li
-								p Puertas
+								b Puertas
 							li
-								p Pasajeros
+								b Pasajeros
 							li
-								p Litros (motor)
+								b Litros (motor)
 							li
-								p Cilindros
+								b Cilindros
 							li
-								p Combustible
+								b Combustible
 							li
-								p Consumo de combustible
+								b Consumo de combustible
 							li
-								p 2019 Dodge Charger SRT SC
+								b 2019 Dodge Charger SRT SC
 							li
-								p $1,314,900 MXP
+								b $1,314,900 MXP
 							li
-								p N/D
+								b N/D
 							li
-								p Automático
+								b Automático
 							li
-								p 4
+								b 4
 							li
-								p 5
+								b 5
 							li
-								p 6.2
+								b 6.2
 							li
-								p 8
+								b 8
 							li
-								p Gasolina premium
+								b Gasolina premium
 							li
-								p 8.3 km/l
+								b 8.3 km/l
 		include parts/footer.pug
