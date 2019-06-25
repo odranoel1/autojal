@@ -25,36 +25,41 @@ html(lang="es")
 		
 		.Product-brands
 			.container-fluid
-				.row
-					.col-sm-12
+				.row.filter-product
+					.col-sm-10.col-sm-offset-1
 						form(action="")
-							label MARCA
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label MODELO
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label VERSIÓN
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label AÑO
-							select(name="")
-								option(value="") 1
-								option(value="") 2
+							.row.form-group
+								.col-xs-6.col-md-3.item
+									label MARCA
+									select(name="").form-control
+										option(value="") 2019
+										option(value="") 2018
+								.col-xs-6.col-md-3.item
+									label MODELO
+									select(name="").form-control
+										option(value="") 2019
+										option(value="") 2018
+								.col-xs-6.col-md-3.item
+									label VERSIÓN
+									select(name="").form-control
+										option(value="") 2019
+										option(value="") 2018
+								.col-xs-6.col-md-3.item
+									label AÑO
+									select(name="").form-control
+										option(value="") 2019
+										option(value="") 2018
 			.container
 				.row
-					.col-sm-12.my-5
+					.col-md-10.col-md-offset-1.my-5
 						span.breadcrumbs
-							| AUTOS NUEVOS / MARCA / 
-							b JEEP
+							| AUTOS NUEVOS / 
+							b MARCA
 				.row
-					.col-sm-12
+					.col-md-10.col-md-offset-1
 						h2.title-default Marcas
 				.row
-					.col-sm-12.content
+					.col-md-10.col-md-offset-1.content
 						a(href="product.html")
 							img(src="assets/img/autojal-logo-audi.png", alt="Autojal").img-responsive
 						a(href="product.html")

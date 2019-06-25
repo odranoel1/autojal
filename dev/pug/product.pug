@@ -25,25 +25,30 @@ html(lang="es")
 		
 		.Product
 			.container-fluid
-				.row
-					.col-sm-12
+				.row.filter-product
+					.col-sm-10.col-sm-offset-1
 						form(action="")
-							label MARCA
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label MODELO
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label VERSIÓN
-							select(name="")
-								option(value="") 1
-								option(value="") 2
-							label AÑO
-							select(name="")
-								option(value="") 1
-								option(value="") 2
+							.row.form-group
+								.col-xs-6.col-md-3.item
+									label MARCA
+									select(name="").form-control
+										option(value="") 2019
+										option(value="") 2018
+								.col-xs-6.col-md-3.item
+									label MODELO
+									select(name="").form-control
+										option(value="") 2019
+										option(value="") 2018
+								.col-xs-6.col-md-3.item
+									label VERSIÓN
+									select(name="").form-control
+										option(value="") 2019
+										option(value="") 2018
+								.col-xs-6.col-md-3.item
+									label AÑO
+									select(name="").form-control
+										option(value="") 2019
+										option(value="") 2018
 			.container
 				.row
 					.col-sm-10.col-sm-offset-1.my-5

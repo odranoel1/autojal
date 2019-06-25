@@ -71,7 +71,7 @@
       display block
 
 .Contact
-  margin-top 70px
+  margin-top 20px
   margin-bottom 70px
   a
     display block
@@ -90,7 +90,8 @@
 
 .Product-brands
   .content
-    margin 60px 0
+    margin-top 60px
+    margin-bottom 60px
     display grid
     grid-template-columns auto auto auto auto
     justify-items center
@@ -125,6 +126,8 @@
     color #b3b3b3
 
 .Product-detail
+  .main-img
+    width 100%
   .thumbnails
     display grid
     grid-template-columns repeat(4,auto)
@@ -132,6 +135,8 @@
     margin-top 20px
     li
       padding 0
+    @media only screen and (min-width 768px) and (max-width 991px)
+      grid-template-columns repeat(2,auto)
   .description
     h3
       color $red
@@ -146,6 +151,39 @@
         color $black
       .price
         color $black
+      .question
+        border 1px solid $white
+        border-radius 10px
+        background-color $white
+        text-align center
+        &:hover > p
+          display block
+        i
+          color $red
+        p
+          background-color $black
+          border-radius 10px
+          color $white
+          padding 15px
+          display none
+          position absolute
+          bottom 58px
+          left 0
+          margin 0 10px
+          font-size 0.9em
+          &:before
+            content ""
+            width 0
+            height 0
+            position absolute
+            top 100%
+            right 10%
+            border-right 18px solid transparent
+            border-left 18px solid transparent
+            border-top 20px solid black
+      .btn-default
+        color $white
+        white-space normal
   .specifications
     h2
       color $red
@@ -154,6 +192,8 @@
       grid-template-columns auto auto
       padding-left 0
       list-style none
+      @media only screen and (max-width 480px)
+        grid-template-columns auto
       li
         border-bottom 1px solid $red
         padding 10px 0
@@ -173,8 +213,8 @@
         margin-top 0
       b
         display block
-      p
-        white-space pre-line
+      // p
+      //   white-space pre-line
       @media only screen and (max-width 992px)
         margin-top 20px
     .price
@@ -317,5 +357,15 @@
   background-color $black
   padding 20px 0
   text-align center
-  label
-    color $white
+  form
+    label
+      color $white
+      @media only screen and (max-width 992px)
+        margin-top 20px
+    .item
+      display grid
+      grid-template-columns repeat(2, auto)
+      align-items center
+      justify-items center
+      @media only screen and (max-width 992px)
+        grid-template-columns auto
