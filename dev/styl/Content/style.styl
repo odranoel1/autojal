@@ -1,41 +1,95 @@
+#home-sidebar
+  .sp-layer
+    text-align center
+    color $white
+    left 50% !important
+    transform translate(-50%,-50%) !important
+    top 40% !important
 .Home
   .car-segment
     text-align center
     padding 30px 0
+    border-top 5px solid $red
     ul
       list-style none
       li
-        padding 0 50px
+        padding 45px
+        @media only screen and (min-width 992px) and (max-width 1149px)
+          padding 30px
         a
           color black
+          &:hover
+            color $red
+            text-decoration none
+    .mobil-cars
+      display none
+      padding 0
+      @media only screen and (max-width 991px)
+        display grid
+        grid-template-columns repeat(3, auto)
+        justify-items center
+        li
+          padding 25px
+      @media only screen and (max-width 768px)
+        grid-template-columns repeat(2, auto)
+  .shadow
+    box-shadow inset 0px 4px 7px -1px rgba(0,0,0,0.75)
   .featured
     text-align center
+    background-color #f1f1f1
+    padding-top 30px
+    padding-bottom 60px
+    h2
+      margin-bottom 3rem
     .item
-      border 1px solid black
       border-radius 10px
       margin 0 10px
       img
         border-top-left-radius 10px
         border-top-right-radius 10px
       .content
-        padding 10px
+        padding 28px 15px
         text-align left
+        background-color $white
+        border-bottom-left-radius 10px
+        border-bottom-right-radius 10px
         p
           margin 0
         span
           color $black
           font-weight bold
           display block
+        a
+          margin-top 20px
+  .cta-parallax
+    background-repeat no-repeat
+    background-position center
+    background-size cover
+    padding-top 7%
+    padding-bottom 7%
+    background-attachment fixed
+    background-image url('../assets/img/autojal-parallax.png')
+    text-align center
+    h2
+      color $white
+      font-size 2.5em
+      font-weight bold
+      @media only screen and (max-width 768px)
+        font-size 1.5em
   .services
+    box-shadow 0px -4px 7px -1px rgba(0,0,0,0.75)
     ul
       list-style none
       padding-left 0
       li
         display grid
-        grid-template-columns auto auto
+        grid-template-columns 15% 85%
         gap 1.5rem
+        margin 50px 0
         b
           color $red
+        .fix
+          font-size 0.8em
 
 .About
   .info
@@ -50,8 +104,7 @@
       @media only screen and (max-width 768px)
         padding 15px
     img
-      @media only screen and (max-width 700px)
-        width 100%
+      width 100%
   .directory
     margin-bottom 60px
     & > div:first-child
@@ -76,6 +129,8 @@
   a
     display block
     color $black
+  .btn-default
+    width 50%
 
 .Blog
   .back
@@ -126,6 +181,10 @@
     color #b3b3b3
 
 .Product-detail
+  .title-default
+    span
+      float right
+      font-size 3rem
   .main-img
     width 100%
   .thumbnails
@@ -149,6 +208,17 @@
       a
         display block
         color $black
+      .color
+        display flex
+        a
+          background-color #72614f
+          width 40px
+          height 40px
+          display block
+          margin-right 10px
+          margin-bottom 10px
+        .gray
+          background-color gray
       .price
         color $black
       .question
@@ -252,6 +322,18 @@
         border-radius 10px
         padding 0 8px
         margin 0 !important
+        input[type="checkbox"]:checked + .effect
+          background-color $black
+          color $white
+          position absolute
+          top 0
+          left 0
+          right 0
+          bottom 0
+          border-radius 10px
+          display block
+          padding 10px
+          text-align center
     .select-agency
       grid-template-columns repeat(3, 190px)
       grid-template-rows auto auto
@@ -264,6 +346,8 @@
         grid-template-columns repeat(2, 150px)
       @media only screen and (max-width 400px)
         grid-template-columns 100%
+    .btn-default
+      width 40%
 
 .Account
   .title hr
@@ -282,7 +366,6 @@
       grid-template-columns 100%
       gap 0
     .item
-      border 1px solid $black
       border-radius 10px
       box-shadow 10px 10px 6px -8px rgba(0,0,0,0.75)
       display grid

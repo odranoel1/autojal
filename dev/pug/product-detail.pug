@@ -57,8 +57,9 @@ html(lang="es")
 							b JEEP
 				.row
 					.col-md-10.col-md-offset-1
-						h2.title-default Grand Cherokee trailhawk
-						h3 Jeep
+						h2.title-default
+							| Grand Cherokee trailhawk
+							span Jeep
 				.row
 					.col-sm-6.col-md-5.col-md-offset-1
 						img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive.main-img
@@ -94,10 +95,15 @@ html(lang="es")
 							a(href="#") Jeep Grand Cherokee Ladero 4x4 - 3.2L 271 hp v6
 							a(href="#") Jeep Grand Cherokee Ladero 4x4 - 3.2L 271 hp v6
 							label Color
-							.radio
-								label
-									input(type="radio" name="optradio" checked)
-									| Color
+							//- .radio
+							//- 	label
+							//- 		input(type="radio" name="optradio" checked)
+							//- 		| Color
+							.color
+								a(href="#", target="")
+									span
+								a(href="#", target="").gray
+									span
 							p.price
 								b $824,900.00
 							.row
