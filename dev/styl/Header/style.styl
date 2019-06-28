@@ -25,6 +25,9 @@
 			right 10px
 			font-size 1.5em
 			color $red
+	ul.desktop
+		@media only screen and (max-width 768px)
+			display none
 	ul.mobil
 		display none
 		list-style none
@@ -37,13 +40,16 @@
 				border-right transparent
 
 .Header-home
-	display none
+	background-color transparent
+	border-bottom 3px solid transparent
 	position absolute
 	top 0
 	left 0
 	right 0
 	z-index 9
 	li
+		&:nth-child(8)
+			border-right 1px solid $white
 		a
 			color $white
 	@media only screen and (max-width 768px)
@@ -55,4 +61,11 @@
 	left 0
 	right 0
 	z-index 999
-	margin-bottom 50px
+	animation-name animateBanner
+	animation-duration 1s
+
+@keyframes animateBanner
+	from
+		opacity 0
+	to
+		opacity 1

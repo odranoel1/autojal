@@ -78,17 +78,90 @@ $( document ).ready(function() {
       $('.mobil').slideToggle('fast');
     });
 
-    // Menu Fixed
-    //Menu Fixed
-    $(window).scroll(function(){
-      var heightMenu = $('.Header').outerHeight(true);
+    function menuHome() {
+      var headerTag = $('header');
+      for (var i = 0; i < headerTag.length; i++) {
+        var eq = headerTag.eq(i);
 
-      if ($(this).scrollTop() > 0) {
-        $('.Header').addClass('fixed');
-        $('body').css('margin-top', (heightMenu) + 'px');
-      } else {
-        $('.Header').removeClass('fixed');
-        $('body').css('margin-top', '0');
+        var getClass = headerTag.eq(i)[0].className;
+        var getLength = getClass.length;
+
+        var mediaquery = window.matchMedia("(min-width: 769px)");
+
+        if (mediaquery.matches) {
+          if (getClass.length < 7 && $('header').hasClass('Header-home')) {
+            // console.log('success');
+            eq.addClass('d-none');
+          } else {
+            // console.log('wrong');
+          }
+        } else {
+          eq.removeClass('d-none');
+        }
       }
-  });
+    }
+
+    menuHome();
+
+    $(window).resize(function() {
+      menuHome();
+    });
+
+    $( window ).scroll(function() {
+      var headerTag = $('header');
+      for (var i = 0; i < headerTag.length; i++) {
+        var eq = headerTag.eq(i);
+
+        var getClass = headerTag.eq(i)[0].className;
+
+        var heightHeader = eq.outerHeight(true);
+        var nextElement = eq.next();
+
+        if($(this).scrollTop() > 10){
+          //inHome
+          if (headerTag.hasClass('Header-home')) {
+            if (getClass.length > 13) {
+              eq.addClass('d-none');
+            } else {
+              eq.addClass('fixed');
+
+              var mediaquery = window.matchMedia("(min-width: 769px)");
+
+              if (mediaquery.matches) {
+                eq.removeClass('d-none');
+              }
+            }
+          }
+          //outHome
+          else {
+            nextElement.css('margin-top', (heightHeader) + 'px');
+            if (getClass.length <= 13) {
+              eq.addClass('fixed');
+            }
+          }
+        } else {
+          //inHome
+          if (headerTag.hasClass('Header-home')) {
+            if (getClass.length > 13) {
+              eq.removeClass('d-none');
+            } else {
+              eq.removeClass('fixed');
+
+              var mediaquery = window.matchMedia("(min-width: 769px)");
+
+              if (mediaquery.matches) {
+                eq.addClass('d-none');
+              }
+            }
+          }
+          //outHome
+          else {
+            nextElement.css('margin-top', 'auto');
+            if(getClass.length <= 13) {
+              eq.removeClass('fixed');
+            }
+          }
+        }
+      }
+    });
 });
