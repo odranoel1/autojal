@@ -164,4 +164,81 @@ $( document ).ready(function() {
         }
       }
     });
+
+    // $('.radio label').on("click", function(){
+    //
+    // });
+
+    // var agencies = $('.radio .select-radio');
+    // agencies.eq(0).addClass('isActive');
+    //
+    // $('.radio .select-radio input[type="radio"]').click(function(){
+    //
+    //   if (agencies.eq(0).hasClass('isActive')) {
+    //     agencies.eq(0).removeClass('isActive');
+    //   }
+    //
+    //   if (true) {
+    //
+    //   }
+    //
+    //   // console.log(agencies);
+    //   // for (var i = 0; i < 3; i++) {
+    //   //   if (agencies.eq(i).hasClass('isActive')) {
+    //   //     agencies.eq(i).removeClass('isActive');
+    //   //   } else {
+    //   //     agencies.eq(i).addClass('isActive');
+    //   //   }
+    //   // }
+    //
+    //   // if($(this).prop("checked") == true){
+    //   //   alert("Checkbox is checked.");
+    //   //   // agencies.eq(0).removeClass('isActive');
+    //   // }
+    // });
+
+    // radio = $('.select-radio input[type="radio"]')
+    //
+    // $('.select-radio').click(function() {
+    //   if(radio.prop('checked')){
+    //     alert("Checkbox is checked.");
+    //   }
+    // })
+    //
+    // var test = $('.select-radio input[type="radio"]').click(function(){
+    //   if($(this).attr('checked')){
+    //     alert("Checkbox is checked.");
+    //   }
+    // });
+    // console.log(test);
+    // $('.select-radio').on('change', function() {
+    //
+    //   if ($('input[name=optradio]:checked')) {
+    //     $(this).addClass('isActive');
+    //   }
+    //
+    //   if ($('input[name=optradio]')) {
+    //     $(this).addClass('test');
+    //   }
+    //
+    //   // var radio = $('input[name=optradio]:checked', '.form-request-prod');
+    //   //
+    //   // var label = $('.select-radio input[name=optradio]:checked');
+    //   //
+    //   // label.addClass('isActive');
+    // });
+
+    // Product ZOOM & Change beetwen thumbnail
+    $(".img-detail-link").click( function(e) {
+       e.preventDefault();
+       var src = $(this).attr('data-src');
+
+       $("#img-detail").attr('src',src);
+       $(".img-zoom").attr('href',src);
+
+       $("#img-detail").magnify();
+    });
+
+    $("#img-detail").magnify();
+
 });

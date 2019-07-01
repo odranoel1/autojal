@@ -28,8 +28,16 @@ html(lang="es")
 				.row
 					.col-xs-10.col-xs-offset-1.mt-5
 						span.breadcrumbs
-							| AUTOS NUEVOS / MARCA / JEEP / GRAND CHEROKEE / 
-							b APARTAR
+							a(href="product.html") AUTOS NUEVOS 
+							| / 
+							a(href="product-brands.html") MARCA 
+							| / 
+							a(href="product-detail.html") JEEP 
+							| / 
+							a(href="product-detail.html") GRAND CHEROKEE 
+							|	/ 
+							a(href="request-product.html")
+								b APARTAR
 				.row
 					.col-xs-10.col-xs-offset-1
 						h2.title-default Solicitar unidad
@@ -71,12 +79,12 @@ html(lang="es")
 										h3 AGENCIAS
 										hr
 									.radio
-										label(for="")
-											input(type="radio" name="optradio" checked)
+										label(for="").select-radio
+											input(type="radio" name="optradio" checked value="1")
 											| AGENCIAS DE LA MARCA EN MI ZONA
 									.radio
-										label(for="")
-											input(type="radio" name="optradio")
+										label(for="").select-radio
+											input(type="radio" name="optradio" value="2")
 											| SELECCIÓN POR AGENCIA
 										.select.select-agency
 											.checkbox
@@ -110,8 +118,8 @@ html(lang="es")
 													span.effect
 														| Honda Vanguardia
 									.radio
-										label(for="")
-											input(type="radio" name="optradio")
+										label(for="").select-radio
+											input(type="radio" name="optradio" value="3")
 											| SELECCIÓN POR ZONA
 										.select.select-zone
 											.checkbox

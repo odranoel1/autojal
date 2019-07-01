@@ -53,8 +53,10 @@ html(lang="es")
 				.row
 					.col-md-10.col-md-offset-1.my-5
 						span.breadcrumbs
-							| MARCA / 
-							b JEEP
+							a(href="product.html") MARCA 
+							| / 
+							a(href="product-brands.html")
+								b JEEP
 				.row
 					.col-md-10.col-md-offset-1
 						h2.title-default
@@ -62,20 +64,17 @@ html(lang="es")
 							span Jeep
 				.row
 					.col-sm-6.col-md-5.col-md-offset-1
-						img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive.main-img
+						a(href="assets/img/autojal-product-item.jpg").img-zoom
+							img(src="assets/img/autojal-product-item.jpg", alt="OptiClub").img-responsive.main-img#img-detail
 						ul.list-inline.thumbnails
 							li
-								a(href="#")
-									img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+								img(src="assets/img/autojal-producto-general.png" data-detail="#img-detail" data-src="assets/img/autojal-product-item.jpg" alt="Autojal").img-responsive.img-detail-link
 							li
-								a(href="#")
-									img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+								img(src="assets/img/autojal-producto-general.png" data-detail="#img-detail" data-src="assets/img/autojal-product-item.jpg" alt="Autojal").img-responsive.img-detail-link
 							li
-								a(href="#")
-									img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+								img(src="assets/img/autojal-producto-general.png" data-detail="#img-detail" data-src="assets/img/autojal-product-item.jpg" alt="Autojal").img-responsive.img-detail-link
 							li
-								a(href="#")
-									img(src="assets/img/autojal-producto-general.png", alt="Autojal").img-responsive
+								img(src="assets/img/autojal-producto-general.png" data-detail="#img-detail" data-src="assets/img/autojal-product-item.jpg" alt="Autojal").img-responsive.img-detail-link
 					.col-sm-6.col-md-5.description
 						h3 Descripción
 						p

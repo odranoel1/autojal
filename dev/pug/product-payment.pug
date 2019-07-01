@@ -28,8 +28,16 @@ html(lang="es")
 				.row
 					.col-sm-10.col-sm-offset-1.my-5
 						span.breadcrumbs
-							| AUTOS NUEVOS/ MARCA / JEEP / GRAND CHEROKEE / 
-							b APARTAR
+							a(href="product.html") AUTOS NUEVOS 
+							| / 
+							a(href="product-brands.html") MARCA 
+							| / 
+							a(href="product-detail.html") JEEP 
+							| / 
+							a(href="product-detail.html") GRAND CHEROKEE 
+							|	/ 
+							a(href="request-product.html")
+								b APARTAR
 				.row
 					.col-sm-10.col-sm-offset-1
 						h2.title-default Pago
@@ -45,8 +53,8 @@ html(lang="es")
 								| 8 cilindros
 								| Motor 6.2
 							.right
-								p 2019
-								span COLOR
+								b 2019
+								a(href="#").color
 						.price
 							b $824,900
 				.row
@@ -69,17 +77,17 @@ html(lang="es")
 											input(type="radio" name="optradio")
 											| Pago con Tarjeta
 										img(src="assets/img/autojal-logo-visa.png" alt="Autojal").img-responsive
-							.row.form-group
-								.col-sm-6
+							.row
+								.col-sm-6.form-group
 									label(for="") Nombre del titular
 									input(type="text").form-control
-								.col-sm-6
+								.col-sm-6.form-group
 									label(for="") Número de tarjeta
 									input(type="text").form-control
-								.col-sm-6
+								.col-sm-6.form-group
 									label(for="") Código de seguridad
 									input(type="text").form-control
-								.col-sm-6
+								.col-sm-6.form-group
 									label(for="") Fecha de vencimiento
 									input(type="text").form-control
 							input(type="submit" value="FINALIZAR").btn.btn-default.pull-right.mb-5
