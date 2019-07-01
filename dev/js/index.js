@@ -229,16 +229,42 @@ $( document ).ready(function() {
     // });
 
     // Product ZOOM & Change beetwen thumbnail
-    $(".img-detail-link").click( function(e) {
-       e.preventDefault();
-       var src = $(this).attr('data-src');
+    // $(".img-detail-link").click( function(e) {
+    //    e.preventDefault();
+    //    var src = $(this).attr('data-src');
+    //
+    //    $("#img-detail").attr('src',src);
+    //    $(".img-zoom").attr('href',src);
+    //
+    //    $("#img-detail").magnify();
+    // });
+    //
+    // $("#img-detail").magnify();
 
-       $("#img-detail").attr('src',src);
-       $(".img-zoom").attr('href',src);
+    $('.select-radio').eq(0).addClass('isActive');
+    // console.log(label);
 
-       $("#img-detail").magnify();
+    $('.select-radio').eq(1).click(function() {
+      $(this).addClass('isActive');
+      $('.select-agency').removeClass('d-none');
+      $('.select-zone').addClass('d-none');
+      $('.select-radio').eq(0).removeClass('isActive');
+      $('.select-radio').eq(2).removeClass('isActive');
     });
 
-    $("#img-detail").magnify();
+    $('.select-radio').eq(2).click(function() {
+      $(this).addClass('isActive');
+      $('.select-agency').addClass('d-none');
+      $('.select-zone').removeClass('d-none');
+      $('.select-radio').eq(0).removeClass('isActive');
+      $('.select-radio').eq(1).removeClass('isActive');
+    });
 
+    $('.select-radio').eq(0).click(function() {
+      $(this).addClass('isActive');
+      $('.select-agency').addClass('d-none');
+      $('.select-zone').addClass('d-none');
+      $('.select-radio').eq(1).removeClass('isActive');
+      $('.select-radio').eq(2).removeClass('isActive');
+    });
 });
