@@ -5,6 +5,13 @@
     left 50% !important
     transform translate(-50%,-50%) !important
     top 40% !important
+    h2
+      font-weight bold
+      margin-bottom 50px
+      @media only screen and (min-width 1024px)
+        font-size 2.5em
+      @media only screen and (min-width 992px)
+        font-size 2em
 .Home
   .car-segment
     text-align center
@@ -20,6 +27,7 @@
           color black
           &:hover
             color $red
+            filter invert(24%) sepia(100%) saturate(2958%) hue-rotate(346deg) brightness(93%) contrast(99%)
             text-decoration none
     .mobil-cars
       display none
@@ -59,6 +67,8 @@
           color $black
           font-weight bold
           display block
+        b
+          color $black
         a
           margin-top 20px
   .cta-parallax

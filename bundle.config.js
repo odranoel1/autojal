@@ -15,6 +15,7 @@ module.exports = {
         './bower_components/numeral/numeral.js',
         './bower_components/numeral/locales.js',
         './bower_components/slider-pro/dist/js/jquery.sliderPro.js',
+        './bower_components/magnify/dist/js/jquery.magnify.js',
         // './bower_components/pnotify/dist/pnotify.js',
         // './bower_components/iCheck/icheck.js'
       ],
@@ -23,6 +24,7 @@ module.exports = {
         './bower_components/slider-pro/dist/css/slider-pro.css',
         './bower_components/owl.carousel/dist/assets/owl.carousel.css',
         './bower_components/owl.carousel/dist/assets/owl.theme.default.css',
+        './bower_components/magnify/dist/css/magnify.css',
         // './bower_components/pnotify/dist/pnotify.css',
         // './bower_components/pnotify/dist/pnotify.brighttheme.css',
         // './bower_components/iCheck/skins/minimal/minimal.css',
@@ -49,7 +51,7 @@ module.exports = {
   },
   copy: [
     {
-      src: './dev/**/*.{jpg,png,gif}',
+      src: './dev/**/*.{jpg,png,gif,svg}',
       base: './dev'
     },
     {
